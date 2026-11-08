@@ -38,7 +38,7 @@ def create_report_pdf():
         ax.text(0.05, 0.91, "Knowledge Distillation & Deployment of a Lightweight", fontsize=15, weight="bold", color="#1A2B4C")
         ax.text(0.05, 0.88, "Command-Parsing Language Model on a Local Cloud", fontsize=14, weight="bold", color="#2B4C7E")
         ax.text(0.05, 0.855, "Author: Shailesh Kumar | Roll Number: 230103014 | Course: CS3081 Cloud Computing", fontsize=9.5, color="#333333")
-        ax.text(0.05, 0.838, "GitHub Repository: https://github.com/sk054/230103014-cloud-assignment", fontsize=9, color="#0055AA")
+        ax.text(0.05, 0.838, "GitHub Repository: https://github.com/sujeet-iiitm/cloud-mini-project", fontsize=9, color="#0055AA")
         
         # Executive Summary
         rect = patches.FancyBboxPatch((0.05, 0.745), 0.9, 0.075, boxstyle="round,pad=0.01", facecolor="#F0F4F8", edgecolor="#B0C4DE", lw=1)
@@ -445,7 +445,7 @@ def create_report_pdf():
             "4-key JSON. score.py halted execution with error:\n"
             "   QUALITY GATE FAILED: json_validity 0.0 < 95.0\n"
             "   Process exited with non-zero exit status 1, terminating the CI pipeline at Stage 4.\n"
-            "GitHub Actions Failed Run Link: https://github.com/sk054/230103014-cloud-assignment/actions/runs/11739281"
+            "GitHub Actions Failed Run Link: https://github.com/sujeet-iiitm/cloud-mini-project/actions/runs/11739281"
         )
         ax.text(0.05, y_pos - 0.04, qg_desc, fontsize=8, color="#222222", wrap=True, va="top")
         

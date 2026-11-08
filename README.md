@@ -3,7 +3,7 @@
 
 - **Student Name**: Shailesh Kumar
 - **Roll Number**: `230103014`
-- **GitHub Repository**: [https://github.com/sk054/230103014-cloud-assignment](https://github.com/sk054/230103014-cloud-assignment)
+- **GitHub Repository**: [https://github.com/sujeet-iiitm/cloud-mini-project](https://github.com/sujeet-iiitm/cloud-mini-project)
 - **Course**: CS3081 - Cloud Computing Mini Project
 
 ---
@@ -135,5 +135,5 @@ make down
 Model weights, tokenizer configurations, and SHA-256 checksums are published as assets on GitHub Releases:
 - **Release Tag**: `v1.0.0`
 - **Release Assets**: `models/v1/config.json`, `models/v1/model.bin`, `models/v1/tokenizer_config.json`, `models/v1/model.sha256`
-- **Asset Download URL**: [https://github.com/sk054/230103014-cloud-assignment/releases/tag/v1.0.0](https://github.com/sk054/230103014-cloud-assignment/releases/tag/v1.0.0)
+- **Asset Download URL**: [https://github.com/sujeet-iiitm/cloud-mini-project/releases/tag/v1.0.0](https://github.com/sujeet-iiitm/cloud-mini-project/releases/tag/v1.0.0)
 

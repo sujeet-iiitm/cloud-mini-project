@@ -40,7 +40,7 @@ def create_reflection_pdf():
         # Header Metadata
         ax.text(0.16, 0.935, "CS3081: Cloud Computing Mini Project - Reflection Notes", fontsize=12, weight="bold", color="#1A2B4C")
         ax.text(0.16, 0.912, "Student Name: Shailesh Kumar   |   Roll Number: 230103014", fontsize=9.5, weight="bold", color="#2B4C7E")
-        ax.text(0.16, 0.895, "GitHub Repository: https://github.com/sk054/230103014-cloud-assignment", fontsize=8.5, color="#0055AA")
+        ax.text(0.16, 0.895, "GitHub Repository: https://github.com/sujeet-iiitm/cloud-mini-project", fontsize=8.5, color="#0055AA")
         
         y = 0.865
         
@@ -88,7 +88,7 @@ def create_reflection_pdf():
         # Header Metadata
         ax.text(0.16, 0.935, "Challenges Faced & Applied Technical Solutions", fontsize=12, weight="bold", color="#1A2B4C")
         ax.text(0.16, 0.912, "Student: Shailesh Kumar (Roll No: 230103014)", fontsize=9.5, color="#555555")
-        ax.text(0.16, 0.895, "Repository: https://github.com/sk054/230103014-cloud-assignment", fontsize=8.5, color="#0055AA")
+        ax.text(0.16, 0.895, "Repository: https://github.com/sujeet-iiitm/cloud-mini-project", fontsize=8.5, color="#0055AA")
         
         y = 0.865
         ax.text(0.16, y, "2. Technical Roadblocks, Debugging, and Solutions", fontsize=11, weight="bold", color="#1A2B4C")
@@ -135,7 +135,7 @@ def create_reflection_pdf():
         # Header Metadata
         ax.text(0.16, 0.935, "Observations, Key Findings, and Proposed Improvements", fontsize=12, weight="bold", color="#1A2B4C")
         ax.text(0.16, 0.912, "Student: Shailesh Kumar (Roll No: 230103014)", fontsize=9.5, color="#555555")
-        ax.text(0.16, 0.895, "Repository: https://github.com/sk054/230103014-cloud-assignment", fontsize=8.5, color="#0055AA")
+        ax.text(0.16, 0.895, "Repository: https://github.com/sujeet-iiitm/cloud-mini-project", fontsize=8.5, color="#0055AA")
         
         y = 0.865
         ax.text(0.16, y, "3. Quantitative Observations & Practical Findings", fontsize=11, weight="bold", color="#1A2B4C")
