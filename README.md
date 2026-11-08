@@ -136,3 +136,4 @@ Model weights, tokenizer configurations, and SHA-256 checksums are published as 
 - **Release Tag**: `v1.0.0`
 - **Release Assets**: `models/v1/config.json`, `models/v1/model.bin`, `models/v1/tokenizer_config.json`, `models/v1/model.sha256`
 - **Asset Download URL**: [https://github.com/sk054/230103014-cloud-assignment/releases/tag/v1.0.0](https://github.com/sk054/230103014-cloud-assignment/releases/tag/v1.0.0)
+

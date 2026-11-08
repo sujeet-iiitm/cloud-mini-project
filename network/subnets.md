@@ -102,3 +102,4 @@ The requirement dictates blocking **all** traffic from the abusive range `198.51
 - Because web traffic rules allow connections from anywhere (`0.0.0.0/0`), the CIDR `198.51.100.0/24` is a subset of `0.0.0.0/0`.
 - If the allow rules (e.g., allow TCP 80/443 from `0.0.0.0/0`) were assigned lower rule numbers (e.g., Rule 100) and the deny rule for `198.51.100.0/24` had a higher rule number (e.g., Rule 200), an inbound web packet from `198.51.100.9` on port 443 would match Rule 100 first and be permitted. The deny rule would never be evaluated for web traffic.
 - Therefore, the explicit DENY rule for `198.51.100.0/24` must be placed at a strictly **lower rule number** (e.g., Rule 100) than the general ALLOW rules for `0.0.0.0/0` (Rules 200 and 210). This guarantees that any packet originating from `198.51.100.0/24` is blocked instantly, regardless of destination port.
+

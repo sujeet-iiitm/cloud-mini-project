@@ -87,3 +87,4 @@ with open("results/predictions_student.jsonl", "w", encoding="utf-8") as f:
         f.write(json.dumps(p) + "\n")
 
 print("Generated predictions for Teacher, Untrained, and Student.")
+

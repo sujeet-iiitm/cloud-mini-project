@@ -49,3 +49,4 @@ Log Evidence:
 [2026-11-08 18:18:25,110] [INFO] Model loaded into memory. Warmup inference verified.
 [2026-11-08 18:18:25,120] [INFO] Service initialized successfully. Model Version: v1, Pod: parser-service-7f8d69785-w2n9f
 [2026-11-08 18:18:25,650] [INFO] GET /readyz HTTP/1.1 200 OK
+

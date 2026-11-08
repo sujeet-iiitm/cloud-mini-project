@@ -30,3 +30,4 @@ spec:
                 name: parser-service
                 port:
                   number: 8000
+
