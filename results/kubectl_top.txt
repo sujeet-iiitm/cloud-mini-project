@@ -1,0 +1,4 @@
+NAME                              CPU(cores)   MEMORY(bytes)   
+parser-service-7f8d69785-m9k2w   382m         42Mi            
+parser-service-7f8d69785-z8t4q   376m         43Mi            
+seaweedfs-5d6c8b9d8c-2jklm        12m          48Mi            

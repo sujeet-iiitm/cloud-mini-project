@@ -1,0 +1,30 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Model weights (Published to GitHub Release assets, not committed to git)
+models/*/*.bin
+models/*/*.pt
+models/*/*.safetensors
+!models/*/*.sha256
+!models/*/config.json
+!models/*/tokenizer_config.json
+
+# Shards / raw cache if large
+datasets/teacher/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Specific
+.DS_Store
+Thumbs.db

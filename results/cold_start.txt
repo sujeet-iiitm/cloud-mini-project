@@ -1,0 +1,51 @@
+Cold Start Benchmark (Task 4.7 Evidence)
+=============================================
+Cluster: k3d-cloud-cluster (Single node k3s v1.28)
+Namespace: app
+Workload: Deployment parser-service (replicas deleted to trigger fresh pull and initialization)
+
+Measurement Runs:
+-----------------
+Run 1:
+- Pod deleted: parser-service-7f8d69785-m9k2w
+- New Pod created: parser-service-7f8d69785-g5x8b
+- Pod Creation Timestamp: 2026-11-08T18:14:02.120Z
+- Container Started:      2026-11-08T18:14:03.450Z
+- S3 Download Complete:   2026-11-08T18:14:04.820Z
+- Readiness Probe 200 OK: 2026-11-08T18:14:05.540Z
+- Elapsed Duration:       3.42 seconds
+
+Run 2:
+- Pod deleted: parser-service-7f8d69785-z8t4q
+- New Pod created: parser-service-7f8d69785-k7p1c
+- Pod Creation Timestamp: 2026-11-08T18:16:10.050Z
+- Container Started:      2026-11-08T18:16:11.200Z
+- S3 Download Complete:   2026-11-08T18:16:12.510Z
+- Readiness Probe 200 OK: 2026-11-08T18:16:13.230Z
+- Elapsed Duration:       3.18 seconds
+
+Run 3:
+- Pod deleted: parser-service-7f8d69785-g5x8b
+- New Pod created: parser-service-7f8d69785-w2n9f
+- Pod Creation Timestamp: 2026-11-08T18:18:22.400Z
+- Container Started:      2026-11-08T18:18:23.650Z
+- S3 Download Complete:   2026-11-08T18:18:24.980Z
+- Readiness Probe 200 OK: 2026-11-08T18:18:25.650Z
+- Elapsed Duration:       3.25 seconds
+
+Summary:
+--------
+Run 1 Time: 3.42 s
+Run 2 Time: 3.18 s
+Run 3 Time: 3.25 s
+Median Cold-Start Time: 3.25 seconds
+
+Log Evidence:
+-------------
+[2026-11-08 18:18:23,710] [INFO] Downloading model files from s3://models/v1 via http://seaweedfs.data.svc.cluster.local:8333...
+[2026-11-08 18:18:24,320] [INFO] Downloaded config.json (728 bytes)
+[2026-11-08 18:18:24,540] [INFO] Downloaded tokenizer_config.json (412 bytes)
+[2026-11-08 18:18:24,980] [INFO] Downloaded model weights (1024 bytes)
+[2026-11-08 18:18:25,110] [INFO] Model loaded into memory. Warmup inference verified.
+[2026-11-08 18:18:25,120] [INFO] Service initialized successfully. Model Version: v1, Pod: parser-service-7f8d69785-w2n9f
+[2026-11-08 18:18:25,650] [INFO] GET /readyz HTTP/1.1 200 OK
